@@ -197,7 +197,7 @@ y_values = [-2.273,-2.383]   # y坐标
 plt.plot(x_values, y_values, 'b-')
 
 
-# 定义五边形的顶点坐标
+# 定义多边形的顶点坐标
 vertices = np.array([[0.174, -2.243], [0.072, -2.36], [-0.214, -2.153],
                      [-0.296, -2.253], [-0.04,-2.453], [-0.122, -2.543],
                      [0.246,-2.744], [0.368,-2.383], [0.174, -2.243]])
@@ -205,7 +205,7 @@ vertices = np.array([[0.174, -2.243], [0.072, -2.36], [-0.214, -2.153],
 val=0.87
 custom_gray = (val, val, val)  # 使用RGB分量，红色最大（1），绿色和蓝色为0
 
-# 画实心五边形
+# 画实心多边形
 pentagon = plt.Polygon(vertices, facecolor=custom_gray, edgecolor='gray')  # 绿色填充，黑色边界
 ax.add_patch(pentagon)
 
